@@ -6,7 +6,8 @@ on:
       - master
   pull_request:
     types: [opened, reopened, synchronize] # Activadores para CI
-
+  workflow_dispatch: 
+  
 jobs:
   Build_Test:
     runs-on: ubuntu-latest
